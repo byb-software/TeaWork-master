@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fankui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dcdada"
+    tools:context="com.qf.teawork.FankuiActivity">
+    <ImageView
+        android:id="@+id/callback"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:src="@mipmap/searchbackbtn"
+        android:onClick="click"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="意见反馈"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:src="@mipmap/righttopbutton"
+        android:layout_alignParentRight="true"
+        android:onClick="click"
+        />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/callback"
+        android:background="#00ff4c"
+        />
+
+    <TextView
+        android:id="@+id/biaoti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="标      题:"
+        android:textSize="20dp"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/biaotiText"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/biaoti"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#faf7f7"
+        android:hint="请输入标题内容"
+        />
+    <TextView
+        android:id="@+id/context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="反馈内容:"
+        android:textSize="20dp"
+        android:layout_below="@+id/biaotiText"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/contextText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/context"
+        android:layout_marginTop="10dp"
+        android:background="#fcfbfb"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="请输入您要反馈的内容"
+        android:lines="10"
+        />
+
+    <ImageView
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/submit"
+        android:layout_below="@+id/contextText"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="click"
+        />
+
+</RelativeLayout>

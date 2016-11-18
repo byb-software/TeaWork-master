@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qf.teawork.MainActivity">
+    <!--内容区-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:orientation="horizontal"
+           >
+           <android.support.design.widget.TabLayout
+               android:id="@+id/tabLayout"
+               android:layout_width="0dp"
+               android:layout_weight="7"
+               xmlns:app="http://schemas.android.com/apk/res-auto"
+               android:layout_height="match_parent">
+
+           </android.support.design.widget.TabLayout>
+
+           <ImageView
+               android:id="@+id/drawerButton"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:src="@mipmap/more"
+               android:onClick="click"
+               />
+
+       </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#6bf5d1"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            ></android.support.v4.view.ViewPager>
+        
+    </LinearLayout>
+
+
+
+    <!--右侧的菜单栏区域-->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/rightMenu"
+        android:layout_gravity="end"
+        android:background="#fff"
+        >
+        <!--通过引用将右边的界面加载进来-->
+        <include layout="@layout/right_main"/>
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

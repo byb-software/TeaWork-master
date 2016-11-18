@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/callback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/searchbackbtn"
+                android:onClick="click"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="茶百科"
+                android:textSize="25dp"
+                android:layout_centerInParent="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/righttopbutton"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#0ee10a"
+            />
+
+    </LinearLayout>
+
+<EditText
+    android:id="@+id/editText"
+    android:layout_width="200dp"
+    android:layout_height="30dp"
+    android:layout_marginTop="65dp"
+    android:background="@mipmap/myedit"
+    android:layout_marginLeft="10dp"
+    android:drawableLeft="@mipmap/searchico"
+    android:hint="关键字"
+
+    />
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/gosearch"
+        android:layout_marginTop="65dp"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_alignParentRight="true"
+        android:onClick="click"
+        />
+
+    <TextView
+        android:id="@+id/hot"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editText"
+        android:layout_marginLeft="10dp"
+        android:text="热门搜索：茶"
+        android:textSize="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/shoucang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/shoucangjia"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/hot"
+        android:layout_marginTop="20dp"
+        />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="30dp"
+       android:layout_below="@+id/hot"
+       android:layout_marginTop="20dp"
+       android:layout_marginLeft="18dp"
+       android:textSize="15dp"
+       android:text="收藏夹"
+       />
+    <TextView
+        android:id="@+id/myshoucang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的收藏"
+        android:layout_below="@+id/shoucang"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="17dp"
+        android:onClick="click"
+        />
+
+    <TextView
+        android:id="@+id/lishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="历史访问记录"
+        android:layout_below="@+id/myshoucang"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="17dp"
+        android:onClick="click"
+        />
+
+    <ImageView
+        android:id="@+id/guanyu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/guanyu"
+        android:layout_below="@+id/lishi"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关于客户端"
+        android:layout_below="@+id/lishi"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/banquan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guanyu"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="版权信息"
+        android:textSize="17dp"
+        android:onClick="click"
+        />
+
+    <TextView
+        android:id="@+id/yijian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="意见反馈"
+        android:textSize="17dp"
+        android:layout_below="@+id/banquan"
+        android:onClick="click"
+        />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yijian"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="用户登录"
+        android:textSize="17dp"
+        />
+
+    <TextView
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="退出登录"
+        android:textSize="17dp"
+        />
+
+
+</RelativeLayout>

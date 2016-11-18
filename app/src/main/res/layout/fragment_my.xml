@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.qf.teawork.fragment.MyFragment"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!--     ptr:ptrAnimationStyle="flip"  flip:翻转  rotate:旋转-->
+    <!--     ptr:ptrShowIndicator="true"  右上角 右下角出现箭头
+             ptr:ptrDrawable=“” 上拉下拉图标
+            ptr:ptrAnimationStyle=""  图标动画  取值： flip:翻转 rotate旋转
+             ptr:ptrHeaderBackground=""  上拉下拉时 头部的背景色
+            ptr:ptrHeaderTextColor=""     上拉下拉时 文字颜色
+            ptrRefreshableViewBackground 设置整个mPullRefreshListView的背景色
+            ptrScrollingWhileRefreshingEnabled刷新的时候，是否允许ListView或GridView滚动。觉得为true比较好。
+      ptrListViewExtrasEnabled 决定了Header，Footer以何种方式加入mPullRefreshListView，true为headView方式加入，就是滚动时刷新头部会一起滚动。
+    -->
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ptrShowIndicator="false"
+        app:ptrAnimationStyle="flip"
+        app:ptrDrawable="@mipmap/xlistview_arrow"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/empty"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂无网络数据!"/>
+
+    <ImageView
+        android:id="@+id/backTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/lv_backtotop"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="click"
+        />
+
+</RelativeLayout>
